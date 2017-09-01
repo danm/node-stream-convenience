@@ -1,0 +1,22 @@
+{
+  "name": "stream-convenience",
+  "version": "1.0.0",
+  "description": "A simple set of scripts that I personally use when working with large json-nd and csv.",
+  "main": "local-csv-json-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danm/node-stream-convenience.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danm/node-stream-convenience/issues"
+  },
+  "homepage": "https://github.com/danm/node-stream-convenience#readme",
+  "dependencies": {
+    "mongodb": "^2.2.31"
+  }
+}
