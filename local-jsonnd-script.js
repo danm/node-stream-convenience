@@ -1,7 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 
-const loc = '/Users/daniel/git/npm/nodestash/example/2017-08-31-18-52-news-v2-26427483-0.json';
+const loc = '/Users/daniel/git/npm/nodestash/example/tmp_mongo.ndjson';
 
 const read = readline.createInterface({
     input: fs.createReadStream(loc),
@@ -9,15 +9,18 @@ const read = readline.createInterface({
 
 let index = 0;
 read.on('line', (data) => {
-    
     const json = JSON.parse(data);
-    if (json.user && json.user.age) {
-        console.log(json);
-        index++;
-        if (index > 10) process.exit();
+    if (json.bbc.countername.includes('zhongwen')) {
+        console.log(data);
+        process.exit() 
+    } else {
+        
     }
     
+});
 
+read.on('close', () => {
+    console.log(index);
 });
 
   

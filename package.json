@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/danm/node-stream-convenience#readme",
   "dependencies": {
-    "mongodb": "^2.2.31"
+    "aws-sdk": "^2.107.0",
+    "mongodb": "^2.2.31",
+    "request": "^2.81.0"
   }
 }
