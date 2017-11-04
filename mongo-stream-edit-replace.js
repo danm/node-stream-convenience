@@ -1,6 +1,4 @@
 const MongoClient = require('mongodb').MongoClient;
-const BSON = require('mongodb-core').BSON;
-const bson = new BSON();
 
 const url = 'mongodb://192.168.0.44:27017/abacus';
 const collection = 'cps';
